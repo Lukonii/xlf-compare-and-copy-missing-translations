@@ -10,6 +10,7 @@ This small script will compare two .xlf files, and for every source tag which is
 </trans-unit>
 ```
 <b>`<target></target>`</b> will be replaces with translated one. <b>`<target>Descripción</target>`</b>
+It will also work if <target> is missing by inserting that line.
 
 * donwload main.exe and run it
 * Enter the name of 'source.xlf', need-translation file
