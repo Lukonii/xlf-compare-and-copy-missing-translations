@@ -59,15 +59,15 @@ func GoLineByLineInSourceFile(fi *os.File, fo *os.File, t *os.File) {
 			continue
 		}
 		if strings.Contains(currSourceLine, "translated") {
-			// translated skip serching
+			// translated skip searching
 			prewSourceLine = ""
 			InsertLineInTranslFile(datawriter, currSourceLine)
 			continue
 		}
 		if (strings.Contains(currSourceLine, "<target>") && strings.Contains(currSourceLine, "</target>")) &&
 			currSourceLine[strings.Index(currSourceLine, ">")+1] != 60 {
-			// <target>transaltion</target> - has transaltion, skip serching
-			// <target></target> 60 = <, if after > is not < - skip serching
+			// <target>transaltion</target> - has transaltion, skip searching
+			// <target></target> 60 = <, if after > is not < - skip searching
 			// <target> </target> - has translation even it is empty
 			prewSourceLine = ""
 			InsertLineInTranslFile(datawriter, currSourceLine)
