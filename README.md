@@ -1,5 +1,5 @@
 # xlf-compare-and-copy-missing-translations
-This small script will compare two .xlf files, and for every source tag which is not translated in one will try to find translation in other and paste the missing translation.
+This small script will compare two .xlf (.txt) files, and for every source tag which is not translated in one will try to find translation in other and paste the missing translation.
 
 ```xlf
 <trans-unit id="xxx" size-unit="char" translate="yes" xml:space="preserve">
